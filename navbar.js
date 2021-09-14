@@ -8,7 +8,14 @@ var isHidden = collapseClasses.contains("hide-mobile");
 function toggleNavbar() {
   
     if (toggleVisible === true) {
-        switch (isHidden) {
+        collapse classes.toggle("hide-mobile");
+    }
+
+}
+
+/*
+
+switch (isHidden) {
             case true:
                 collapseClasses.remove("hide-mobile");
                 
@@ -20,11 +27,8 @@ function toggleNavbar() {
                 break;
         }
 
-    }
 
-}
-
-/*toggle.addEventListener('click', toggleNavbar);*/
+toggle.addEventListener('click', toggleNavbar);*/
 
 
 
