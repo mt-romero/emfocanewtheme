@@ -24,5 +24,5 @@ function toggleNavbar() {
 
 }
 toggle.addEventListener('click', toggleNavbar);
-toggle.addEventListener('touchup', toggleNavbar);
+
 
