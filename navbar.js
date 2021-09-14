@@ -23,5 +23,5 @@ function toggleNavbar() {
 
 }
 toggle.addEventListener('click', toggleNavbar);
-toggle.addEventListener('touchstart', toggleNavbar);
+toggle.addEventListener('pointerdown', toggleNavbar);
 
