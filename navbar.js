@@ -25,6 +25,6 @@ function toggleNavbar() {
 }
 toggle.addEventListener('click', toggleNavbar);
 
-toggle.addEventListener(touchend', toggleNavbar);
+toggle.addEventListener('touchend', toggleNavbar);
 
 
