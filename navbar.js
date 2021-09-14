@@ -1,5 +1,5 @@
-var toggle = document.getElementById("#toggle-nav")
-var collapse = document.getElementById("#nav-collapse");
+var toggle = document.querySelector("#toggle-nav")
+var collapse = document.querySelector("#nav-collapse");
 var collapseClasses = collapse.classList;
 
 
