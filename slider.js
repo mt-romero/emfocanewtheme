@@ -18,7 +18,6 @@ const indicatorNext = document.querySelector('#next');
 const indicatorPrevious = document.querySelector('#previous');
 
 
-console.log(containerWidth);
 
 //controls
 
@@ -28,16 +27,17 @@ function moveLeft() {
   var nextSlidePosition = slidePositionHolder + containerWidth;
   sliderLong.scrollLeft = nextSlidePosition;
   currentSlidePosition = sliderLong.scrollLeft;
-  console.log(currentSlidePosition)
+  
 
 }
 
 function moveRight() {
     var currentSlidePosition= sliderLong.scrollLeft;
-    var previousSlidePosition = currentSlidePosition - containerWidth;
+    var slidePositionHolder=currentSlidePosition;
+    var previousSlidePosition = slidePositionHolder - containerWidth;
     sliderLong.scrollLeft = previousSlidePosition;
     currentSlidePosition = sliderLong.scrollLeft;
-    console.log(currentSlidePosition)
+    
 
 
 }
@@ -58,6 +58,7 @@ function setInitialPosition(event) {
   }
 }
 
+
 function swipeToPosition(event) {
   if (pressed === true) {
     event.preventDefault();
@@ -71,6 +72,23 @@ function swipeToPosition(event) {
     return;
   }
 }
+
+
+
+function swipeToPositionMobile(event) {
+  if (pressed === true) {
+    event.preventDefault();
+    moving = true;
+    sliderLong.classList.add('.active');
+    const dragDistance = event.clientX - positionInitial.x;
+    sliderLong.scrollLeft = positionInitial.left + dragDistance;
+    currentSlidePosition = sliderLong.scrollLeft;
+  } else {
+    moving = false;
+    return;
+  }
+}
+
 
 function stopPosition(event) {
   if (pressed === true) {
@@ -95,7 +113,7 @@ sliderLong.addEventListener('mouseleave', stopPosition);
 sliderLong.addEventListener('mouseup', stopPosition);
 
 sliderLong.addEventListener('touchstart', setInitialPosition);
-sliderLong.addEventListener('touchmove', swipeToPosition);
+sliderLong.addEventListener('touchmove', swipeToPositionMobile);
 sliderLong.addEventListener('touchend', stopPosition);
 
 
