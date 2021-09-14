@@ -8,6 +8,7 @@ let positionInitial = {
 const slidesAll = document.querySelectorAll('.slideMobile');
 const slides = Array.from(slidesAll);
 const containerWidth = sliderLong.offsetWidth;
+var slidePositionHolder;
 var previousSlide;
 var currentSlidePosition= 0;
 var nextSlide;
@@ -23,7 +24,8 @@ console.log(containerWidth);
 
 function moveLeft() {
   var currentSlidePosition= sliderLong.scrollLeft;
-  var nextSlidePosition = currentSlidePosition + containerWidth;
+  var slidePositionHolder=currentSlidePosition;
+  var nextSlidePosition = slidePositionHolder + containerWidth;
   sliderLong.scrollLeft = nextSlidePosition;
   currentSlidePosition = sliderLong.scrollLeft;
   console.log(currentSlidePosition)
