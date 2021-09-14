@@ -24,7 +24,7 @@ function toggleNavbar() {
 
 }
 
-toggle.addEventListener('click', toggleNavbar);
+/*toggle.addEventListener('click', toggleNavbar);*/
 
 
 
