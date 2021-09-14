@@ -1,8 +1,8 @@
 /*general*/
-@import url(/construction/navbar.css);
-@import url(/construction/hero.css);
-@import url(/construction/aligment.css);
-@import url(/construction/slider.css);
+@import url(navbar.css);
+@import url(hero.css);
+@import url(aligment.css);
+@import url(/slider.css);
 
 :root {
   --darkBlue: #040058;
@@ -12,7 +12,7 @@
   --almostWhite: #FFFFF9;
   --black: #16161d;
   --almostBlack: #0d0b1f;
-  --bgWhite: rgb(247, 247, 247);
+  --bgWhite: #F0F6ED;
   --bgCyan: #00635E;
   --bgBlue: #074596;
   --bgIndigo: #120999;
