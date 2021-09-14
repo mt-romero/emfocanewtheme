@@ -1,7 +1,7 @@
-var toggle = document.getElementById("toggle-nav")
-var collapse = document.getElementById("nav-collapse");
+var toggle = document.getElementById("#toggle-nav")
+var collapse = document.getElementById("#nav-collapse");
 var collapseClasses = collapse.classList;
-console.log(collapse.classList);
+
 
 function toggleNavbar() {
     let toggleVisible = toggle.classList.contains("show-mobile");
