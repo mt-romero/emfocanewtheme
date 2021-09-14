@@ -1,0 +1,55 @@
+.heroBg {
+    width: 100%;
+    height: 500px;
+    background: url("/img/nosotros-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .primary {
+    background:  var(--darkBlue);
+  }
+
+  .underline {
+    text-decoration: underline;
+  text-decoration-color: var(--bgBlue);
+    font-weight: 900;
+  
+  }
+  
+  
+  .tituloHero {
+    font-size: 50px;
+    max-width: 50%;
+    color: var(--darkBlue);
+    margin: 5% 5% 0px 5%;
+    top: 0px;
+    font-weight: 400;
+    line-height: 64px;
+  }
+
+  .subheadingHero {
+    margin: 0.3% 5%;
+    font-size: 21px;
+    color: var(--bgBlue);
+
+  }
+  
+  @media only screen and (max-width: 815px) {
+
+    .heroBg {
+        height: 400px;
+      }
+    .tituloHero {
+        max-width: 100%;
+        font-size: 40px;}
+
+        .subheadingHero {
+            margin: 0.3% 5%;
+            font-size: 18px;}
+        
+
+  }
