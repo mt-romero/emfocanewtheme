@@ -10,15 +10,16 @@ function toggleNavbar() {
         switch (isHidden) {
             case true:
                 collapseClasses.remove("hide-mobile");
-                console.log(collapseClasses);
+                
                 break;
 
             case false:
                 collapseClasses.add("hide-mobile");
-                console.log(collapseClasses);
+              
                 break;
         }
 
     }
 
 }
+toggle.addEventListener('click', toggleNavbar);
