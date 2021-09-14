@@ -45,6 +45,9 @@ function moveRight() {
 indicatorNext.addEventListener('click', moveLeft);
 indicatorPrevious.addEventListener('click', moveRight);
 
+indicatorNext.addEventListener('touchstart', moveLeft);
+indicatorPrevious.addEventListener('touchstart', moveRight);
+
 // main functionality+swipe
 function setInitialPosition(event) {
   event.preventDefault();
@@ -90,6 +93,11 @@ sliderLong.addEventListener('mousedown', setInitialPosition);
 sliderLong.addEventListener('mousemove', swipeToPosition);
 sliderLong.addEventListener('mouseleave', stopPosition);
 sliderLong.addEventListener('mouseup', stopPosition);
+
+sliderLong.addEventListener('touchstart', setInitialPosition);
+sliderLong.addEventListener('touchmove', swipeToPosition);
+sliderLong.addEventListener('touchend', stopPosition);
+
 
 
 
