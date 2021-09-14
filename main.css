@@ -300,6 +300,13 @@ sections*/
   margin: 5px 0px;
 }
 
+.footer {
+  background-color: var(--black);
+  color: var(--bgWhite);
+  height: 80px;
+  width:100%
+}
+
 
 @media only screen and (max-width: 815px) {
 
