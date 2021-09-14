@@ -1,5 +1,5 @@
-var toggle = document.querySelector(".toggle-collapse');
-var collapse = document.querySelector('.collapse-nav');
+const toggle = document.querySelector('.toggle-collapse');
+const collapse = document.querySelector('.collapse-nav');
 var collapseClasses = collapse.classList;
 var toggleVisible = toggle.classList.contains("show-mobile");
 var isHidden = collapseClasses.contains("hide-mobile");
