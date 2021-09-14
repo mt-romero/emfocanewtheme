@@ -4,6 +4,7 @@ var collapseClasses = collapse.classList;
 
 
 function toggleNavbar() {
+    preventDefault();
     let toggleVisible = toggle.classList.contains("show-mobile");
     let isHidden = collapseClasses.contains("hide-mobile");
     if (toggleVisible === true) {
