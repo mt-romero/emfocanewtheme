@@ -1,12 +1,11 @@
-var toggle = document.querySelector("#toggle-nav")
-var collapse = document.querySelector("#nav-collapse");
+var toggle = document.querySelector(".toggle-collapse');
+var collapse = document.querySelector('.collapse-nav');
 var collapseClasses = collapse.classList;
 var toggleVisible = toggle.classList.contains("show-mobile");
 var isHidden = collapseClasses.contains("hide-mobile");
 
 
 function toggleNavbar() {
-    preventDefault();
   
     if (toggleVisible === true) {
         switch (isHidden) {
@@ -24,6 +23,7 @@ function toggleNavbar() {
     }
 
 }
+
 toggle.addEventListener('click', toggleNavbar);
 
 
