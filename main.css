@@ -358,7 +358,7 @@ sections*/
   }
   .sectionBodyBlock {
     margin-top: 8%;
-    margin-right:9%;
+    margin-left:9%;
     width: 100%;
   }
   
@@ -377,7 +377,7 @@ sections*/
   
     height:100%;
     margin: 0;
-    padding:2%;
+    padding:4%;
 
   }
 
